@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Dicoding Submission - Belajar Dasar Pemrograman Web - David Fauzi -->
+    <!-- Font Roboto dari Google API -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        ProyekYuk
+    </title>
+</head>
+
+<body>
+    <header>
+        <!-- Header Website -->
+        <nav>
+            <div class="logo">
+                <img class="logo-item" src="assets/img/logoicon.png" width="50px">
+                <h1 class="logo-item">ProyekYuk</h1>
+            </div>
+
+            <ul class="menu">
+                <li class="menu-item"><a class="menu-link" href="#beranda">Beranda</a></li>
+                <li class="menu-item"><a class="menu-link" href="#fitur">Fitur</a></li>
+                <li class="menu-item"><a class="menu-link" href="#paket">Paket</a></li>
+                <li class="menu-item"><a class="menu-link" href="#testimoni">Testimoni</a></li>
+                <li class="menu-item"><a class="menu-link" href="#tentang-kami">Tentang Kami</a></li>
+            </ul>
+
+            <!-- Buat Hamburger untuk mobile -->
+            <div class="burger">
+                <img src="assets/img/burger.png" width="50px">
+            </div>
+        </nav>
+    </header>
+    <!-- Content Utama -->
+    <main>
+        <div id="content">
+            <!-- Konten 1 - Beranda -->
+            <article id="beranda">
+                <div class="background-beranda">
+                    <div>
+                        <h2>Wujudkan ide proyek websitemu bersama kami !</h2>
+                        <button type="button" onclick="location.href='#paket'">Find more</button>
+                    </div>
+
+                </div>
+            </article>
+            <!-- Konten 2 - Fitur -->
+            <article id="fitur">
+                <h2>Fitur</h2>
+                <div class="container">
+                    <section class="fitur" id="fitur1">
+                        <img src="assets/img/fitur1.png" width="100px">
+                        <h3>Murah</h3>
+                        <p>Jasa pengerjaan proyek kami memiliki harga yang bersaing</p>
+                    </section>
+                    <section class="fitur" id="fitur2">
+                        <img src="assets/img/fitur2.png" width="100px">
+                        <h3>Berpengalaman</h3>
+                        <p>Kami telah berpengalaman dalam mengerjakan berbagai proyek</p>
+                    </section>
+                    <section class="fitur" id="fitur3">
+                        <img src="assets/img/fitur3.png" width="100px">
+                        <h3>Bergaransi</h3>
+                        <p>Pengerjaan proyek tidak tepat waktu ? Garansi uang kembali !</p>
+                    </section>
+                </div>
+
+            </article>
+            <!-- Konten 3 - Paket -->
+            <article id="paket">
+                <h2>Paket</h2>
+                <div class="container">
+                    <section class="paket-item">
+                        <div class="card">
+                            <h3>Paket Hemat</h3>
+                            <img class="card-img" src="assets/img/pakethemat.jpg">
+                            <ul>
+                                <li>Gratis Konsultasi</li>
+                                <li>Gratis Hosting</li>
+                                <li>Gratis Domain</li>
+                                <li>Support 24/7</li>
+                            </ul>
+                            <span id="paket-hemat">Rp 2.999.000,00</span>
+                        </div>
+                    </section>
+                    <section class="paket-item">
+                        <div class="card">
+                            <h3>Paket Komplit</h3>
+                            <img class="card-img" src="assets/img/paketkomplit.jpg">
+                            <ul>
+                                <li>Gratis Konsultasi</li>
+                                <li>Gratis Hosting</li>
+                                <li>Gratis Domain</li>
+                                <li>Support 24/7</li>
+                                <li>Gratis Revisi</li>
+                                <li>Tema Gratis</li>
+                                <li>Gratis logo</li>
+                            </ul>
+                            <span id="paket-komplit">Rp 4.999.000,00</span>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+            <!-- Konten 4 - Testimoni-->
+            <article id="testimoni">
+                <h2>Testimoni</h2>
+
+                <section class="testimoni-item" id="testimoni-satu">
+                    <p><q>Pengerjaannya cepat, hasilnya memuaskan, harganya terjangkau !</q>
+                        <br>
+                        Budi, Bandung
+                    </p>
+                </section>
+                <section class="testimoni-item" id="testimoni-dua">
+                    <p><q>Websitenya keren, mantap deh pokoknya !</q>
+                        <br>
+                        Andi, Jakarta
+                    </p>
+                </section>
+
+                <section class="testimoni-item" id="testimoni-tiga">
+                    <p><q>Hasilnya memuaskan, jangan ragu pesan disini !</q>
+                        <br>
+                        Desi, Tangerang
+                    </p>
+                </section>
+                <div class="carousel">
+                    <button id="carousel-prev" aria-label="Previous">&#60</button>
+                    <button id="carousel-next" aria-label="Next">&#62</button>
+                </div>
+            </article>
+        </div>
+        <!-- Aside - Tentang Kami-->
+        <aside>
+            <article id="tentang-kami">
+                <h2>Tentang Kami</h2>
+
+                <div class="card">
+                    <div class="container">
+                        <div class="box pasfoto">
+                            <img id="pasfoto" src="assets/img/pasfoto.jpg" width="100px">
+
+                        </div>
+                        <div class="box biodata">
+                            <table class="tabel-biodata">
+                                <tr>
+                                    <td><b>Nama</b></td>
+                                    <td class="tabel-value"> David Fauzi</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Pekerjaan</b></td>
+                                    <td class="tabel-value"> Mahasiswa</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Skill</b></td>
+                                    <td class="tabel-value"> Web Development</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Telp</b></td>
+                                    <td class="tabel-value"> 087743872830</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Email</b></td>
+                                    <td class="tabel-value"> davidfauzi29@gmail.com</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <!--  Footer Website -->
+        &copy; 2022 ProyekYuk. All rights reserved
+        <p>Image by <a href="https://www.unsplash.com">Unsplash</a></p>
+        <a href="https://www.flaticon.com/free-icons/project" title="project icons">Icons created by dDara -
+            Flaticon</a>
+    </footer>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/carousel.js"></script>
+</body>
+
+</html>

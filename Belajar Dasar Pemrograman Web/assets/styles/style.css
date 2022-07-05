@@ -1,0 +1,344 @@
+* {
+    /* Reset */
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    /* Font Google API */
+    font-family: 'Roboto', sans-serif;
+}
+
+header { 
+    position: sticky;
+    width:100%;
+    top:0;
+}
+nav {
+    color:white;
+    background-color: black;    
+    padding: 15px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    display:flex;
+    list-style-type: none;
+    margin:0 15px;
+}
+
+.menu-item {
+    font-size:1.15rem;
+    margin: 0 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+    font-size: 1.25rem;
+}
+.logo-item {
+    margin:0 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 0px 5px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+ }
+
+ a {
+     color:white;
+     text-decoration:none
+ }
+ a:hover{
+     font-weight: bold;
+ }
+
+ #fitur,#testimoni {
+     color:white;
+     background-color: black;
+    padding: 15px;
+    }
+
+/* Burger */
+.burger {
+    display:none;
+}
+
+/* beranda */
+.background-beranda 
+{
+    background-image: url("../img/beranda.jpg");
+    /* filter: grayscale(90%); */
+    width: 100%;
+    height: 350px;
+    color:white;
+    font-size: 1.45rem;
+    text-align: center;
+}
+
+.background-beranda div{
+    padding: 100px 0;
+}
+
+.background-beranda div button{
+    margin: 20px auto;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    border-width: 2px;
+    height: 40px;
+    width: 25%;
+    max-width: 175px;
+    background-color: black;
+    color:white;
+    border-color: aliceblue;
+
+}
+
+.background-beranda div button:hover{
+    font-weight: bolder;
+    background-color:grey;
+}
+
+/* Fitur */
+
+#fitur h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    display:flex;
+    width:100%;
+    justify-content: center;
+
+}
+
+.fitur {
+    flex-flow: 1;
+    text-align: center;
+    padding:15px;
+    margin: auto;
+}
+
+.fitur h3 {
+    font-size:1.5rem;
+    margin:10px auto;
+}
+
+.fitur p {
+    font-size:1rem;
+    margin:5px auto;
+    padding:15px;
+}
+
+/* Paket */
+#paket h2 {
+    text-align: center;
+    font-size: 2rem;    
+    margin-top: 15px;
+}
+
+.paket-item {
+    flex-flow: 1;
+    text-align: center;
+    padding:5px;
+    margin:25px auto;
+}
+.card ul{
+    list-style-position: inside;
+    text-align: left;
+    margin: 15px auto;
+    font-size: 1.2rem;
+}
+
+.card span {
+    font-size: 1.6rem;
+    color:#302e27;
+    display: block;
+}
+
+#paket .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 550px;
+}
+
+.card h3{
+    font-size:1.6rem;
+    margin:10px auto;
+    color:#302e27;
+    display:flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+#paket-hemat{
+    margin-top:90px;
+}
+
+#paket-komplit{
+    margin-top: 5px;
+}
+
+ /* Testimoni */
+#testimoni h2{
+    text-align: center;
+    font-size: 2rem;    
+    margin-top: 5px;
+}
+#testimoni {
+    width:100%;
+    padding: 5px 35px;
+}
+/* Carousel */
+
+.carousel {
+    /* Letakan di pojok kanan dan kiri, dengan ketinggi setengah total container */
+    /*  
+    transform: translateY(-50%); */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    position: relative; 
+    bottom: 50px;
+
+
+}
+.carousel button {
+    font-size: 2rem;
+    color:white;
+    background-color: transparent;
+    border-width: 0;
+}
+.carousel button:hover {
+    font-weight:bolder;
+
+}
+
+#carousel-next {
+    margin-right:5px;
+}
+#carousel-prev {
+    margin-left:5px;
+}
+
+.testimoni-item {
+    text-align: center;
+    margin-top: 25px;
+    font-size:1.1rem;
+}
+
+/* Tentang Kami */
+#tentang-kami {
+    width:100%;
+    padding:10px;
+    font-size:1.2rem;
+}
+
+#tentang-kami h2{
+    text-align: center;
+    font-size:1.8rem;
+}
+
+#tentang-kami .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin:10px auto ;
+    padding: 10px;
+    width:95%;
+}
+
+.box.pasfoto{
+    flex-basis:20%;
+    padding-top:10px;
+    padding-right:15px;
+    margin:10px 5px;
+}
+
+.box.biodata{
+    margin:10px 5px;
+    flex-basis:80%;
+}
+#pasfoto {
+    border-radius: 50px;
+}
+
+
+.tabel-biodata {
+    padding:10px;
+    border-spacing: 15px;
+    border-collapse: collapse;
+}
+
+.tabel-value{
+     padding-left:20px;
+}
+
+/* footer */
+
+footer {
+    font-size:1rem
+}
+
+footer p{
+    margin:5px auto;
+}
+
+ /* Responsive  */
+ @media only screen and (max-width: 800px) {
+    .menu {
+        /* Di resolusi mobile, hide dulu menu nya*/
+        margin:0;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        background-color: black;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.1s;
+    }
+    .menu.show {
+        /* Ketika di toggle, menu berubah posisinya sehingga muncul */
+        left: 0;
+    }
+    .menu-item {
+        /* Kasih margin vertikal, textnya dibesarkan sedikit */
+        margin: 20px 0;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .burger {
+        /* munculkan burger logo */
+        display: block; 
+    }
+    .container {
+        /* Responsive dengan flexbox wrap */
+        flex-wrap: wrap;
+        align-items: center;   
+    }
+
+
+}
